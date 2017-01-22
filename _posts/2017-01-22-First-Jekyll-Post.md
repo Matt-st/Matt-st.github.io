@@ -4,6 +4,8 @@ title: First Jekyll Post
 ---
 
 {% highlight java %}
+
+
 public class FirstPost {
 
   public static void main(String[] args){
@@ -11,6 +13,7 @@ public class FirstPost {
   }
 
 }
+
 
 {% endhighlight %}
 
