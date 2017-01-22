@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello my name is Matt.  I like to research technologies, concepts, and tools within the development community.   Many times these topics may be old or well known but I tend to learn best when I research and write about the topic.  Thanks for stopping by!
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
