@@ -1,10 +1,17 @@
 ---
 layout: post
-title: You're up and running!
+title: First Jekyll Post
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+{% highlight java %}
+public class FirstPost {
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+  public static void main(String[] args){
+    System.out.println("First jekyll post!");
+  }
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+}
+
+{% endhighlight %}
+
+Hi folks,  my name is Matt and I am normally a bored developer so I quickly bounce back and forth between technologies.  I have found throughout the years that I learn best by creating tutorials or documentation around new technology and concepts that I am using.  Now to be sure I don't always look at new technology.  For instance I have recently been working on alot of legacy code and that has me researching dependency injection design patterns.  Most design patterns aren't considered new concepts!  Anyway if you continue to visit my blog you will hopefully find interesting development related topics and tutorials.  Thanks for stopping by!!!
