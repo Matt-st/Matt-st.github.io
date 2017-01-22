@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Working with Legacy Code: Dependency Injection"
+title: "Development Stategies for Working in a Legacy Application"
 date: 2017-01-22 16:10
 categories: design-patterns
 ---
