@@ -5,7 +5,7 @@ date: 2017-01-22 16:10
 categories: design-patterns
 ---
 
-# Dependency Injection
+
 
 #### What is Dependency Injection?
 Dependency injection is removing the instantiation of an object from the constructor and either passing it into the constructor to be set or setting it on an object with a setter method.  Really dependency injection simply moves the ownership of creating objects up the dependency tree.  At some point if you are going to apply dependency injection patterns an object will have to be created.  The key is that we can move that creation away such that we can get good tests around the classes which use the dependency among other things.  There are many virtues of using dependency injection which I will list below:
