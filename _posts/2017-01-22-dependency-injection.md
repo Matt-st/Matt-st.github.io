@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simple Dependency Injection Example"
-date: 2017-01-22 16:10
+date: 2017-01-22
 categories: design-patterns
 ---
 
