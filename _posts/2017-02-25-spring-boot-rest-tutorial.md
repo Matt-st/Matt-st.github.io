@@ -6,16 +6,16 @@ categories: spring-boot
 published: false
 ---
 
-# Spring Boot Rest Tutorial
+## Spring Boot Rest Tutorial
 
 This tutorial will focus on spring-boot and rest services.  We will go over the basics of setting up a spring boot application and implementing rest services on that application.
 
-# Prerequisites
+## Prerequisites
 Java version : 1.8
 Maven version 3.1 or greater
 Your favorite IDE
 
-# Getting Started
+## Getting Started
 
 Let's create a simple maven project and edit the pom.xml to include the spring dependencies.
 
@@ -74,7 +74,21 @@ Spring applications rely on a `SpringApplication.run(Main.class, commandLineArgs
 
 ```
 
-### Now Let's Run Our Application
+### Annotations
+Spring boot adds the `@SpringBootApplication` annotation to the main class.  The purpose for this annotation is to tell spring at startup to use default configuration and context creation.  This single annotation replaces the use of several others shown below:
+```java
+        @SpringBootConfiguration
+        @EnableAutoConfiguration
+        @ComponentScan(excludeFilters={@Filter(type=CUSTOM, classes={TypeExcludeFilter.class}), @Filter(type=CUSTOM, classes={AutoConfigurationExcludeFilter.class})})
+        @Target(value={TYPE})
+        @Retention(value=RUNTIME)
+        @Documented
+        @Inherited
+
+
+```
+
+## Now Let's Run Our Application
 With only our pom file and a main method we start our spring boot application running on an embedded tomcat server.  We don't need a web.xml or a spring-context.xml file.  To run the application we can simple `Run As..` a java application in your IDE or we can execute on the command line mvn spring-boot:run.
 
 To validate that our application is starting up correctly we should see a print out of the following:
@@ -96,6 +110,13 @@ To validate that our application is starting up correctly we should see a print 
 
 
 ```
+
+### Ping the Server
+Once start up has completed we can navigate our browser to the `http://localhost:8080` URL.  We will get an error page but that is expected.
+
+
+## Summary
+At this point we have created a simple spring boot application that doesn't do anything but demonstrates how to quickly get started with spring boot.  In following tutorials we will develop our quote service and demonstrate more features that spring has to offer. Thanks for stopping by!!
 
 
 
