@@ -11,9 +11,9 @@ published: false
 This tutorial will focus on spring-boot and rest services.  We will go over the basics of setting up a spring boot application and implementing rest services on that application.
 
 ## Prerequisites
-Java version : 1.8
-Maven version 3.1 or greater
-Your favorite IDE
+* Java version : 1.8
+* Maven version 3.1 or greater
+* Your favorite IDE
 
 ## Getting Started
 
