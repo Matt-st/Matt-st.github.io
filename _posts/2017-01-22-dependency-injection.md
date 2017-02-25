@@ -31,7 +31,7 @@ Below you will find an example where are developers are not using dependency inj
     
     }
 ```
-Good DI example.  Now again this is very contrived but as you can see any Person object can be set on the DependencyInjection object.  It will be more flexible and just as important much easier to inject a mock Person object such that any functionality can mocked up to help with unit test this DependencyInjection class.
+Good DI example.  Now again this is very contrived but as you can see any Person object can be set on the DependencyInjection object.  It will be more flexible and just as important much easier to inject a mock Person object such that any functionality can mocked up to help with unit testing this DependencyInjection class.
 
 ```java
     public class DependencyInjection{
