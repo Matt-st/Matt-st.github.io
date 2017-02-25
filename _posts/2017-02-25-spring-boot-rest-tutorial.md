@@ -3,12 +3,12 @@ layout: post
 title: Spring Boot Rest Tutorial
 date: 2017-02-25
 categories: spring-boot
-published: false
+published: true
 ---
 
 ## Spring Boot Rest Tutorial
 
-This tutorial will focus on spring-boot and rest services.  We will go over the basics of setting up a spring boot application and implementing rest services on that application.
+This tutorial series will focus on spring-boot and rest services.  We will go over the basics of setting up a spring boot application and implementing rest services on that application.
 
 ## Prerequisites
 * Java version : 1.8
