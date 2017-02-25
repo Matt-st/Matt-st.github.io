@@ -89,7 +89,7 @@ Spring boot adds the `@SpringBootApplication` annotation to the main class.  The
 ```
 
 ## Now Let's Run Our Application
-With only our pom file and a main method we start our spring boot application running on an embedded tomcat server.  We don't need a web.xml or a spring-context.xml file.  To run the application we can simple `Run As..` a java application in your IDE or we can execute on the command line mvn spring-boot:run.
+With only our pom file and a main method we start our spring boot application running on an embedded tomcat server.  We don't need a web.xml or a spring-context.xml file.  To run the application we can simple `Run As..` a java application in your IDE or we can execute on the command line `mvn spring-boot:run`.
 
 To validate that our application is starting up correctly we should see a print out of the following:
 
