@@ -3,6 +3,7 @@ layout: post
 title: "Building a distributed backend Tutorial Introduction"
 date: 2017-01-22
 categories: design-patterns, Spring Cloud, Eureka, Netflix, Hystrix
+published: true
 ---
 
 
@@ -30,10 +31,10 @@ In this tutorial series we will be building a set of applications both business 
 * OAuth 2
 
 ##### Tools
-Apache Maven 3.2.2
-Java 8
-Git
-IDE of your choice (Demonstrations will be in eclipse)
+Apache Maven 3.2.2   
+Java 8   
+Git   
+IDE of your choice (Demonstrations will be in eclipse)   
 
 ##### What we will build
 The business use case will be that of a coffeeshop menu. As the application architecture grows we may add in ordering, delivery, account creation, coffeeshop admin functions, and anything else that comes to mind.  Again this is a contrived usecase that is simply leveraged as a means to show an application architecture.
