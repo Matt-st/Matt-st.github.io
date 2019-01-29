@@ -9,7 +9,7 @@ published: true
 
 
 #### What you will learn and do
-In this tutorial series we will be building a set of applications both business and infrastructure related that represent what a production system might end up looking like.  The technologies used here are relevant to what companies are leveraging in application platforms today.  The example business use case is a bit contrived but will serve to demonstrate many of the features offered by spring cloud, cassandra, kafka, and other relevant technologies.  This tutorials will broken down into byte size chunks that end in working examples with articulated learnings.   
+In this tutorial series we will be building a set of applications both business and infrastructure related that represent what a production system might end up looking like.  The technologies used here are relevant to what companies are leveraging in application platforms today.  The example business use case is a bit contrived but will serve to demonstrate many of the features offered by spring cloud, cassandra, kafka, and other relevant technologies.  This tutorials is broken down into byte size chunks that end in working examples with articulated learnings.   
 
 ##### Technologies Used
 * Spring Core
