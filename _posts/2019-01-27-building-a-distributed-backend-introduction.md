@@ -38,8 +38,4 @@ IDE of your choice (Demonstrations will be in eclipse)
 ##### What we will build
 The business use case will be that of a coffeeshop menu. As the application architecture grows we may add in ordering, delivery, account creation, coffeeshop admin functions, and anything else that comes to mind.  Again this is a contrived usecase that is simply leveraged as a means to show an application architecture.
 
-
-## Summary
-We discussed briefly about what dependency injection really is.  We have listed some benefits of using dependency injection.  We have also called out some DI frameworks that our popular in the industry at the moment.  Thanks for reading the post!
-
-
+## Stay tuned for Part 1
