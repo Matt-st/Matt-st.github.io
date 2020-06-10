@@ -3,7 +3,7 @@ layout: post
 title: "Building a Comparator in Java"
 date: 2020-06-05
 categories: Java, Collections, Comparator
-published: false
+published: true
 ---
 
 
