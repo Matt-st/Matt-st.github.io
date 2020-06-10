@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sprng-Boot-Rest-Tutorial-Part-2"
-date: 2017-01-22
+date: 2020-06-05
 categories: Java, Spring-Boot, RESTful
 published: false
 ---
@@ -15,8 +15,7 @@ This tutorial is the second part in a series that focuses on spring-boot and res
 * Java version : 1.8
 * Maven version 3.1 or greater
 * Your favorite IDE
-* python 3.6
-* pip
+* Postman
 
 ## Getting Started
 
