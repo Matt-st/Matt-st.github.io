@@ -51,18 +51,21 @@ The `list.sort(c)` calls several methods down the stack but ultimately ends up a
 
 ` private static void mergeSort(Object[] src, Object[] dest, int low, int high, int off, Comparator c)`
 
-Below we have our simple compare string length class which implements the functional interface Comparator<T>.  The interface only has one method that we need to implement.  The compare method will return 1, -1, or 0 based on if the values are different or equal.
+The mergesort implementation can be seen in the code [here](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort(T[],%20int,%20int,%20java.util.Comparator)) but I think for now it's sufficient for us to know that it exists and this is what is happening during the `Collections.sort()` call.
+
+Below we have our simple compare string length class which implements the functional interface Comparator<T>.  We have implemented the compare function which will take 2 Strings and compare there lengths.  The compare method will return 1, -1, or 0 based on if the values are different or equal.
 
 ```java
 class SimpleCompareStringLength implements Comparator<String> {
     public int compare(String o1, String o2) {
         int result = Integer.compare(o1.length(), o2.length());
-        System.out.println("compared  :" +  o1 +" -> "+ o2 + " = " + result);
+        System.out.println("compared: " +  o1 +" -> "+ o2 + " = " + result);
         return result;
     }
 }
 
 ```
+
 Inside the compare method we can see that we call an existing implementation of `Integer.compare`.  Below we see the implmentation of that method and it's a simple next teranary operator.  There are three simple cases:
 1. x == y returns 0
 2. x < y returns -1
@@ -78,62 +81,62 @@ Inside the compare method we can see that we call an existing implementation of 
 We can run the code above as a simple java main execution and the output is as follows. 
 
 ```text
-compared  :that -> So = 1
-compared  :his -> that = -1
-compared  :his -> that = -1
-compared  :his -> So = 1
-compared  :place -> his = 1
-compared  :place -> that = 1
-compared  :shall -> that = 1
-compared  :shall -> place = 0
-compared  :never -> that = 1
-compared  :never -> shall = 0
-compared  :be -> place = -1
-compared  :be -> his = -1
-compared  :be -> So = 0
-compared  :with -> that = 0
-compared  :with -> shall = -1
-compared  :with -> place = -1
-compared  :those -> with = 1
-compared  :those -> shall = 0
-compared  :those -> never = 0
-compared  :cold -> with = 0
-compared  :cold -> never = -1
-compared  :cold -> shall = -1
-compared  :cold -> place = -1
-compared  :and -> cold = -1
-compared  :and -> his = 0
-compared  :and -> with = -1
-compared  :and -> that = -1
-compared  :timid -> with = 1
-compared  :timid -> shall = 0
-compared  :timid -> those = 0
-compared  :souls -> cold = 1
-compared  :souls -> never = 0
-compared  :souls -> timid = 0
-compared  :who -> cold = -1
-compared  :who -> and = 0
-compared  :who -> with = -1
-compared  :who -> that = -1
-compared  :neither -> cold = 1
-compared  :neither -> those = 1
-compared  :neither -> souls = 1
-compared  :know -> cold = 0
-compared  :know -> those = -1
-compared  :know -> shall = -1
-compared  :know -> place = -1
-compared  :victory -> know = 1
-compared  :victory -> those = 1
-compared  :victory -> souls = 1
-compared  :victory -> neither = 0
-compared  :nor -> know = -1
-compared  :nor -> who = 0
-compared  :nor -> with = -1
-compared  :nor -> that = -1
-compared  :defeat -> know = 1
-compared  :defeat -> timid = 1
-compared  :defeat -> neither = -1
-compared  :defeat -> souls = 1
+compared: that -> So = 1
+compared: his -> that = -1
+compared: his -> that = -1
+compared: his -> So = 1
+compared: place -> his = 1
+compared: place -> that = 1
+compared: shall -> that = 1
+compared: shall -> place = 0
+compared: never -> that = 1
+compared: never -> shall = 0
+compared: be -> place = -1
+compared: be -> his = -1
+compared: be -> So = 0
+compared: with -> that = 0
+compared: with -> shall = -1
+compared: with -> place = -1
+compared: those -> with = 1
+compared: those -> shall = 0
+compared: those -> never = 0
+compared: cold -> with = 0
+compared: cold -> never = -1
+compared: cold -> shall = -1
+compared: cold -> place = -1
+compared: and -> cold = -1
+compared: and -> his = 0
+compared: and -> with = -1
+compared: and -> that = -1
+compared: timid -> with = 1
+compared: timid -> shall = 0
+compared: timid -> those = 0
+compared: souls -> cold = 1
+compared: souls -> never = 0
+compared: souls -> timid = 0
+compared: who -> cold = -1
+compared: who -> and = 0
+compared: who -> with = -1
+compared: who -> that = -1
+compared: neither -> cold = 1
+compared: neither -> those = 1
+compared: neither -> souls = 1
+compared: know -> cold = 0
+compared: know -> those = -1
+compared: know -> shall = -1
+compared: know -> place = -1
+compared: victory -> know = 1
+compared: victory -> those = 1
+compared: victory -> souls = 1
+compared: victory -> neither = 0
+compared: nor -> know = -1
+compared: nor -> who = 0
+compared: nor -> with = -1
+compared: nor -> that = -1
+compared: defeat -> know = 1
+compared: defeat -> timid = 1
+compared: defeat -> neither = -1
+compared: defeat -> souls = 1
  So
  be
  his
