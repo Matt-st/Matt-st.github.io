@@ -9,7 +9,7 @@ published: false
 
 ## What is the Comparator in Java
 
-A Comparator in java is an interface seen [here](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html), where a developer can leverage the comparator functional interface to build a custom compare method.  We can use the custom compare method to sort our objects.  In this post I will be showing a couple examples of sorting using custom compare functions.
+A Comparator in java is an interface seen [here](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html), where a developer can leverage the comparator functional interface to build a custom compare method.  We can use the custom compare method to sort our objects.  In this post I will be showing an example of sorting using custom compare functions.
 
 ### Simple comparator example to sort by string length
 We have a basic main method that passes in a sentence to a our function `parseWords(String input)`.  In this function we get each word from the sentence into a string array by splitting on spaces `String[] strArray = input.split(" ");`.  Once we have the String array we convert it to an ArrayList and call `Collections.sort(wordList, new SimpleCompareStringLength());`.  
@@ -157,4 +157,8 @@ compared  :defeat -> souls = 1
 
 ### Ending remarks
 
-I hope that this explanation sheds some light on the usage of comparator's and the collections.sort function.  I also wanted to point out as our example text I used part of the qoute from Theodore Roosevelt titled "The man in the arena" originally taken from his “Citizenship in a Republic” speech.
+I hope that this explanation sheds some light on the usage of comparator's and the collections.sort function.  I also wanted to point out as our example text I used part of the quote from Theodore Roosevelt titled "The man in the arena" originally taken from his “Citizenship in a Republic” speech.
+
+Code for these examples can be found on my github [here](https://github.com/Matt-st/Learning-Topics/blob/master/ds-algo/Comparator/src/main/java/SimpleComparator.java)
+
+Thanks for reading!
