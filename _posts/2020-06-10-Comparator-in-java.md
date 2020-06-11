@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Building a Comparator in Java"
+title: "Building a String Comparator in Java"
 date: 2020-06-05
-categories: Java, Collections, Comparator
+categories: Java, Collections, Comparator, String
 published: true
 ---
 
@@ -53,7 +53,7 @@ The `list.sort(c)` calls several methods down the stack but ultimately ends up a
 
 The mergesort implementation can be seen in the code [here](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort(T[],%20int,%20int,%20java.util.Comparator)) but I think for now it's sufficient for us to know that it exists and this is what is happening during the `Collections.sort()` call.
 
-Below we have our simple compare string length class which implements the functional interface Comparator<T>.  We have implemented the compare function which will take 2 Strings and compare there lengths.  The compare method will return 1, -1, or 0 based on if the values are different or equal.
+Below we have our simple compare string length class which implements the functional interface Comparator<T>.  We have implemented the compare function which will take 2 Strings and compare their lengths.  The compare method will return 1, -1, or 0 based on if the values are different or equal.
 
 ```java
 class SimpleCompareStringLength implements Comparator<String> {
@@ -157,6 +157,10 @@ compared: defeat -> souls = 1
  neither
  victory
 ```
+### What if we want to chain our sorts
+Imagine that you wanted to do several stages of sorting.  
+1. sort by length
+2. sort by alphabet
 
 ### Ending remarks
 
