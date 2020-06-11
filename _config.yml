@@ -6,10 +6,10 @@
 name: Matthew Thorne
 
 # Short bio or description (displayed in the header)
-description: Full stack java developer in the financial services industry.  I am currently working with big data technologies and heavily utilize spring.
+description: I am an Senior Backend Engineer that has worked at companies such as JP Morgan, Capital One, and Acorns.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://avatars.githubusercontent.com/matt-st
 
 #
 # Flags below are optional
@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: Matt-st/
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/mattsthorne/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 
