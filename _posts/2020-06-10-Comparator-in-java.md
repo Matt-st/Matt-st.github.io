@@ -159,8 +159,55 @@ compared: defeat -> souls = 1
 ```
 ### What if we want to chain our sorts
 Imagine that you wanted to do several stages of sorting.  
-1. sort by length
-2. sort by alphabet
+1. sort by length (we already have this implemented above)
+2. sort by alphabet and capitals
+
+We will want to do chaining in this case.  With chaining we can call `thenComparing(Comparator)` as seen below:
+
+```java
+
+ Collections.sort(wordList, new SimpleCompareStringLength()
+                .thenComparing(String::compareTo));
+
+```
+
+Here we can see the code for the `String.compareTo`
+
+```java
+public int compareTo(String anotherString) {
+        byte[] v1 = this.value;
+        byte[] v2 = anotherString.value;
+        if (this.coder() == anotherString.coder()) {
+            return this.isLatin1() ? StringLatin1.compareTo(v1, v2) : StringUTF16.compareTo(v1, v2);
+        } else {
+            return this.isLatin1() ? StringLatin1.compareToUTF16(v1, v2) : StringUTF16.compareToLatin1(v1, v2);
+        }
+    }
+```
+
+If we run our code with the new changes to our collections sort function call we get:
+
+```text
+ So
+ be
+ and
+ his
+ nor
+ who
+ cold
+ know
+ that
+ with
+ never
+ place
+ shall
+ souls
+ those
+ timid
+ defeat
+ neither
+ victory
+```
 
 ### Ending remarks
 
