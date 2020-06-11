@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building a String Comparator in Java"
-date: 2020-06-05
+date: 2020-06-10
 categories: Java, Collections, Comparator, String
 published: true
 ---
