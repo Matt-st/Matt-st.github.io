@@ -30,7 +30,7 @@ class Movie {
 }
 ```
 
-Sort function which uses collection.sort and a custom comparator sorting method.
+Sort function which uses collection.sort and a custom comparator sorting method.  The custom method below will take the `movieList` and process the titles to compare them lexicographically or in laymans terms it will sort them in alphabetical order.
 
 ```java
  static void sortList( List<Movie> movieList) {
@@ -49,17 +49,22 @@ Sort function which uses collection.sort and a custom comparator sorting method.
 The driver method is below:
 ```java
   public static void main(String[] args) {
-       List<Movie> movieList = new ArrayList<>();
-       movieList.add(new Movie("Rainman", 4));
-       movieList.add(new Movie("Godzilla", 2));
-       movieList.add(new Movie("Queen of the South", 4));
-       movieList.add(new Movie("Hitman", 3));
-       sortList(movieList);
+        List<Movie> movieList = new ArrayList<>();
+        movieList.add(new Movie("Apples", 4));
+        movieList.add(new Movie("Rainman", 4));
+        movieList.add(new Movie("Godzilla", 2));
+        movieList.add(new Movie("Queen of the South", 4));
+        movieList.add(new Movie("Hitman", 3));
+        movieList.add(new Movie("Hitman", 2));
+        movieList.add(new Movie("Godzilla", 3));
+        movieList.add(new Movie("Moana", 4));
+        sortList(movieList);
     }
 
 ```
 
 Output:
+
 ```text
  Apples 4
  Godzilla 2
@@ -74,7 +79,7 @@ Output:
 
 ### Example 2 sort by rating
 
-The runner and primary code stays the same we only use a different comparator function.
+The runner and primary code stays the same we only use a different comparator function.  The comparator function we use this time will take an integer and do comparison's on if the integer is larger, smaller, or the same and sort based on those results.  The output here will show the list sorted in a way that put's the order from smallest to largest.
 
 ```java
 	Comparator<Movie> sortingByRating =
@@ -100,6 +105,8 @@ Output:
 
 ### Example 3 Chaining with Custom Class
 Thanks to a post [here](https://medium.com/faun/chaining-comparators-65890bc2ad6a),  I was able to learn about this custom class way of handling chaining for multiple comparators. 
+
+The code below creates a class `MovieChainedComparator` that has a constructor which takes as many `Comparator<Movie>` classes as we add to it.  We can see usage for the constructor in code samples below this.  After the class is built and when the call to `collections.sort` is made it will trigger the `public int compare(Movie m1, Movie m2)` method which will run until the result from every `Comparator<Movie>` class is 0.  A key note about this setup is that `Comparator<Movie>` classes will run in the order by which they are added to the `private List<Comparator<Movie>> listComparators`.
 
 ```java
 class MovieChainedComparator implements Comparator<Movie> {
