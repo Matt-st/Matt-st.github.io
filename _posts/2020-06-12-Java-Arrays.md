@@ -2,7 +2,7 @@
 layout: post
 title: "Java Collections: Arrays"
 date: 2020-06-11
-categories: Java, Util, Collections Comparator, String
+categories: Java, Util, Collections, Comparator, String
 published: false
 ---
 
