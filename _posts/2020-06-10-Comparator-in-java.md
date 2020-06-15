@@ -213,6 +213,6 @@ If we run our code with the new changes to our collections sort function call we
 
 I hope that this explanation sheds some light on the usage of comparator's and the collections.sort function.  I also wanted to point out as our example text I used part of the quote from Theodore Roosevelt titled "The man in the arena" originally taken from his “Citizenship in a Republic” speech.
 
-Code for these examples can be found on my github [here](https://github.com/Matt-st/Learning-Topics/blob/master/ds-algo/Comparator/src/main/java/SimpleComparator.java)
+Code for these examples can be found on my github [here](https://github.com/Matt-st/Learning-Topics/blob/master/ds-algo/Java/src/main/java/comparator/SimpleComparator.java)
 
 Thanks for reading!
