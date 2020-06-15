@@ -3,7 +3,7 @@ layout: page
 title: Currently open to remote roles
 permalink: /resume/
 ---
-[Resume download](https://docs.google.com/viewerng/viewer?url=https://github.com/Matt-st/Matt-st.github.io/tree/master/resume/Matthew-Thorne-Resume.pdf&embedded=true)
+[Resume download](https://docs.google.com/viewerng/viewer?url=https://github.com/Matt-st/Matt-st.github.io/blob/master/resume/Matthew-Thorne-Resume.pdf&embedded=true)
 
 ## Acorns
 Senior Software Engineer
